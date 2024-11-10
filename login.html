@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding login form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="sing-up">
+            <form action="#">
+                <h1>Crear una cuenta</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <p>utiliza tu correo electronico para registrarte</p>
+                <input type="text" name="txt" placeholder="Name" required="">
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="pswd" placeholder="Password" required="">
+                <button>Inscribirse</button>
+            </form>
+        </div>
+
+
+        <div class="sing-in">
+            <form action="#">
+                <h1>Iniciar sesion</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <p>usa tu cuenta</p>
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="pswd" placeholder="Password" required="">
+                <a href="#">olvidaste tu contraseña?</a>
+                 
+                 <a onclick="window.location.href='index.html';"><button>Iniciar sesion</button></a>  
+                 
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-left">
+                    <h1>Bienvenido de nuevo!</h1>
+                    <p>Para mantenerse conectado con nosotros,inicie sesion con su informacion personal</p>
+                    <button id="signIn">Iniciar sesion</button>
+                </div>
+                <div class="overlay-right">
+                    <h1>Hola, amig@</h1>
+                    <p>Introduce tus datos personales y comienza tu viaje con nosotros</p>
+                    <button id="signUp">Inscribirse</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   <script type="text/javascript">
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const main = document.getElementById('main');
+
+    signUpButton.addEventListener('click', () => {
+        main.classList.add("right-panel-active");
+    });
+    signInButton.addEventListener('click', () => {
+        main.classList.remove("right-panel-active");
+    });
+   </script>
+
+</body>
+</html>

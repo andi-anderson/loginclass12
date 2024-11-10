@@ -1,0 +1,104 @@
+
+.tituloindex{
+    
+    font-size: 24px;    
+   font-family:'Courier New', Courier, monospace ;
+   text-transform: uppercase;
+   text-align: center;
+   font-weight: bold;
+}
+
+.lired{
+    color: white;
+    font-size: 18px;
+    background-color:red ;
+}
+
+.liredd{
+    color: white;
+    font-size: 18px;
+}
+
+.ligreen{
+    color: white;
+    font-size: 18px;
+    background-color: green;
+}
+
+.ligreenn{
+    color: white;
+    font-size: 18px;
+}
+
+.liblue{
+    color: white;
+    font-size: 18px;
+}
+
+.libluee{
+    color: white;
+    font-size: 18px;
+    background-color: blue;
+}
+
+h1{
+   font-weight: bold;
+   font-size: 24px;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+h2{
+   font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: left;
+}
+
+
+
+footer{
+    color: blue;
+    background-color: aqua;
+    font-size: 16px;
+    font-style: italic;
+}
+
+p{
+    font-size: 10px;
+}
+
+.fondomoda{
+    background-color: rgb(152, 75, 76);
+}
+
+.fondoteoria{
+    background-color: darkolivegreen;
+}
+
+.fondoint{
+    background-color:rgb(30, 112, 112) ;
+}
+
+label{
+    color: antiquewhite;
+}
+
+th{
+    color: aqua;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button{
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #19f7f3;
+    color: #19f7f3;
+    text-transform: uppercase;
+    border-radius: 25px;
+}
+
+button:hover{
+    background-color: #b3c137;
+}
